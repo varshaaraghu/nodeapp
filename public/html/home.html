@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <!--when you specify file path,it wont fetch the file -->
+        <link href="style.css" rel="stylesheet">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <script src="jquery.min.js"></script>
+        <script src="bootsrap.min.js"></script>
+    </head>
+    <body>
+       <div class="jumbotron">
+           <form action="form/add" method="POST">
+           <table align="center">
+               <tr>
+                   <td>Sno</td>
+                   <td><input type="text" name="sno"></td>
+               </tr>
+               
+               <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name"></td>
+               </tr>
+               
+                <tr>
+                     <td>City</td>
+                     <td><input type="text" name="city"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit" class="btn btn-success">Store Person</button>
+                    </td>
+                </tr>
+           </table>
+           </form>
+           <iframe src="form/report" style="border: none;min-height:500px;width:1000px"></iframe>
+       </div>
+    </body>
+</html>

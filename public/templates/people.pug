@@ -1,0 +1,22 @@
+html
+    link(rel="stylesheet",href="../style.css")
+    link(rel="stylesheet",href="../bootstrap.min.css")
+    script(src="../jquery.min.js")
+    script(src="../bootstrap.min.js")
+  
+    head
+        title pug document
+    body
+        h1 PEOPLE INFO
+        div 
+            table(class ="table table-hover table12")
+                thead
+                    th(class="th") Sno
+                    th(class="th") Name
+                    th(class="th") City
+                tbody
+                    each x in people
+                        tr
+                            td(class="th")= x.sno
+                            td(class="th")= x.name
+                            td(class="th")= x.city
